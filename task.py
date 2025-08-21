@@ -273,7 +273,7 @@ while True:
         speak("Thank you, Sir! I'm here to assist you.")
     elif 'save' in query or 'store' in query:
         save_to_memory()
-    elif 'create file' in query or 'make file' in query or 'write file' in query:
+    elif 'create a file' in query or 'make file' in query or 'write file' in query:
         createFile()
     elif 'list memory' in query or 'show memory' in query:
         memory = load_memory()
