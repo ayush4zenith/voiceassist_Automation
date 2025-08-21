@@ -1,7 +1,7 @@
 🎙 Voice-Controlled Python Assistant
 
 Ever wished your computer could just listen and get things done for you?
-This Voice-Controlled Assistant, built using Python, automates your everyday desktop tasks with simple voice commands — all running locally on your system.
+This Voice-Controlled Assistant, built using Python, automates your everyday desktop tasks with simple voice commands all running locally on your system.
 
 🔧 Features
 
@@ -59,7 +59,7 @@ Executes the appropriate action based on recognized intent.
 
 1. Clone the repository
 
-git clone https://github.com/ayush4zenith/voiceassist_Automation.git
+   git clone https://github.com/ayush4zenith/voiceassist_Automation.git
 
 2. Install dependencies
 pip install -r req.txt
@@ -115,12 +115,15 @@ Hands-free access to routine tasks
 
 Great for learning how speech and system automation work together
 
-🤝 Contribute
+🤝 Contribute:
+
 Got an idea to improve or extend this assistant (like adding email, WhatsApp automation, or more)?
 Feel free to fork, contribute, or raise an issue.
 
-📬 Contact
+📬 Contact:
+
 Have suggestions or feedback? Reach out via LinkedIn or drop an issue here!
 
-⭐ Star this repo
+⭐ Star this repo:
+
 If you find this project helpful, consider starring it. 
