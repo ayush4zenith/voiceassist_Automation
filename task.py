@@ -247,14 +247,18 @@ while True:
         get_news("in","technology")  
     elif 'open youtube' in query:
         open_website("YouTube", "https://www.youtube.com")
-    elif 'college website' in query or 'college site' in query:
-        open_website("college site", "https://sgsits.ac.in")
     elif 'open google' in query:
         open_website("Google", "https://www.google.com")
     elif 'open chatgpt' in query or 'open chat gpt' in query:
         open_website("ChatGpt", "https://www.chatgpt.com")
     elif 'open linkedin' in query:  
         open_website("LinkedIn", "https://www.linkedin.com")
+    elif 'open facebook' in query:
+        open_website("Facebook", "https://www.facebook.com")
+    elif 'open cambridge dictionary' in query:
+        open_website("Cambridge Dictionary", "https://dictionary.cambridge.org")
+    elif 'open stack overflow' in query:
+        open_website("Stack Overflow", "https://stackoverflow.com")
     elif 'open word' in query or 'open ms word' in query:
         open_app("Microsoft Word", WORD_PATH)
     elif 'what is the time' in query or 'tell me the time' in query:
