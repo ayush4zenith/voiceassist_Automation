@@ -34,34 +34,34 @@ Runs locally using VS Code or any Python IDE
 
 ⚙️ How it Works??
 
-•Voice Input & Output
+•Voice Input & Output:
 Uses speech recognition to understand spoken commands in English and Hindi and text to speech to reply.
 Responds with realistic text-to-speech output for a Jarvis-like feel.
 
-•System & Utility Tasks
+•System & Utility Tasks:
 Opens websites, applications, and files on command.
 Plays music from local storage or online.
 Checks internet speed, battery status, and system information.
 
-•Smart Memory
+•Smart Memory:
 Can remember information you tell it (e.g., notes, reminders, personal details).
 Retrieves saved information when asked.
 
-•Knowledge & APIs
+•Knowledge & APIs:
 Uses Gemini API to answer general questions, explain concepts, or assist with tasks.
 Can tell jokes, provide facts, and hold interactive conversations.
 
-•Continuous Loop
+•Continuous Loop:
 Runs persistently, always listening for commands.
 Executes the appropriate action based on recognized intent.
 
 🚀 How to Run?
 
-1. Clone the repository
+1. Clone the repository:
 
    git clone https://github.com/ayush4zenith/voiceassist_Automation.git
 
-2. Install dependencies
+2. Install dependencies using
 pip install -r req.txt
 
 3. Run the script
@@ -69,15 +69,15 @@ python task.py
 
 4. Speak a command, Try saying:
 
-“create a file”
-“Open Google"
-"what is the time"
-"battery"
-“play music”
-“search for Python tutorials on google”
-"weather"
-"store in memory"
-"open youtube"
+  “create a file”
+  “Open Google"
+  "what is the time"
+  "battery"
+  “play music”
+  “search for Python tutorials on google”
+  "weather"
+  "store in memory"
+  "open youtube"
 
 📌 Requirements
 
