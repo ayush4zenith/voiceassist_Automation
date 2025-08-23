@@ -5,3 +5,4 @@ pyjokes
 requests
 python-dotenv
 pyaudio
+pillow

@@ -8,6 +8,7 @@ import pyjokes
 import requests
 import json
 import random
+
 from dotenv import load_dotenv
 load_dotenv()  # Load environment variables from .env file
 GEMINI_API = os.getenv("GEMINI_API_KEY")
@@ -84,6 +85,7 @@ def tell_joke():
     print(joke)
 
 def play_music():
+
     songs=os.listdir(MUSIC_DIR)
     if songs:
         song=random.choice(songs)
@@ -94,7 +96,7 @@ def play_music():
     else:
         speak("No songs found in the music directory.")
     
-def get_weather(city="Indore"):  
+def get_weather(city):  
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     
     complete_url = f"{base_url}appid={WEATHER_API}&q={city}&units=metric"
@@ -115,7 +117,7 @@ def get_weather(city="Indore"):
     except:
         speak("Sorry, I couldn't fetch the weather right now.")
 
-def get_news(country="in", category="technology"):
+def get_news(country, category):
     base_url = "http://api.mediastack.com/v1/news"
 
     params = {
@@ -133,7 +135,7 @@ def get_news(country="in", category="technology"):
 
         if "data" in data and len(data["data"]) > 0:
             articles = data["data"]
-            speak(f"Here are the latest top headlines from {country.upper()}:")
+            speak(f"Here are the latest top headlines from {country.upper()} in {category.upper()}:")
             for i, article in enumerate(articles, 1):
                 headline = article["title"]
                 print(f"{i}. {headline}")
@@ -224,7 +226,8 @@ def get_gemini_response(prompt):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return "I encountered an unexpected issue while processing your request."
-    
+
+
 # Main function
 if __name__ == "__main__":
     wish_me()
@@ -236,15 +239,19 @@ while True:
     # Prioritize exit/quit commands
     if query == "none":
         pass
+    elif 'name' in query:
+        speak("I am Aarvy, your personal voice assistant.")
     elif 'greet' in query or 'hello' in query:
         wish_me()
+    elif 'what do you do' in query or 'your function' in query:
+        speak("I can assist you with various tasks like opening websites, telling jokes, providing weather updates, playing music, and much more.")
     elif 'exit' in query or 'quit' in query or 'bye' in query or 'goodbye' in query:
         speak("Goodbye, Sir!")
         break
     elif 'weather' in query:
         get_weather("Indore")
     elif 'news' in query or 'headlines' in query:
-        get_news("in","technology")  
+        get_news("in","business")  
     elif 'open youtube' in query:
         open_website("YouTube", "https://www.youtube.com")
     elif 'open google' in query:
@@ -275,7 +282,7 @@ while True:
         save_to_memory()
     elif 'create a file' in query or 'make file' in query or 'write file' in query:
         createFile()
-    elif 'list memory' in query or 'show memory' in query:
+    elif 'list memory' in query or 'show memory' in query or 'what you remember' in query:
         memory = load_memory()
         if memory:
             speak("Here's what I remember:")
