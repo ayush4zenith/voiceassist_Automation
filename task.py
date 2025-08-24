@@ -251,7 +251,7 @@ while True:
     elif 'weather' in query:
         get_weather("Indore")
     elif 'news' in query or 'headlines' in query:
-        get_news("in","business")  
+        get_news("in","technology")  
     elif 'open youtube' in query:
         open_website("YouTube", "https://www.youtube.com")
     elif 'open google' in query:
